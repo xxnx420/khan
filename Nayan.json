@@ -1,7 +1,7 @@
 {
   "author": "Nayan",
   "version": "1.5.7",
-  "autoRestart": true,
+  "autoRestart": false,
   "developermode": false,
   "language": "en",
   "notification": true,
