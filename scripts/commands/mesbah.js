@@ -1,1 +1,13 @@
-const axios = require('axios');module.exports.config = {name: "ocr",version: "1.0",author: "Gpt x Mesbah",credits: "Gpt x Mesbah",countDown: 5,cooldowns: 5,role: 0,hasPermssion: 0,description: 'scrape image to text',prefix: true,category: "𝗧𝗢𝗢𝗟'𝗦",category: "𝗧𝗢𝗢𝗟'𝗦"};module.exports.run = async function ({ api, args, message, event }) {try{message.reaction("🕐", event.messageID);const img = event.messageReply.attachments[0].url;const res = await axios.get(`https://mesbah-apis.onrender.com/api/tools/ocr?imageUrl=${encodeURIComponent(img)}`);const txt = res.data.text;message.reply({ body: `${txt}` });await message.reaction("✅", event.messageID);} catch (error) {message.reply(error.message);}};
+const axios = require('axios');
+module.exports.config = {
+  name: "ocr",
+	version: "0.0.2",
+	permission: 0,
+  prefix: 'true',
+	credits: "mesbah",
+	description: "imgae to text",
+	category: "imgae to text",
+	usages: "",
+    cooldowns: 5,
+};
+;module.exports.run = async function ({ api, args, message, event }) {try{const img = event.messageReply.attachments[0].url;const res = await axios.get(`https://mesbah-apis.onrender.com/api/tools/ocr?imageUrl=${encodeURIComponent(img)}`);const txt = res.data.text;message.reply({ body: `${txt}` })} catch (error) {message.reply(error.message);}};
