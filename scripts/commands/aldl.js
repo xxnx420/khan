@@ -3,16 +3,15 @@ const fs = require('fs-extra');
 const d1pt0= require('tinyurl');
 module.exports.config = {
   name: "aldl",
-	version: "0.0.2",
-	permission: 0,
-  prefix: true,
-	credits: "Dipto",
-	description: "all video dawnloader",
-	category: "Media",
-	usages: "fb video link",
-    cooldowns: 5,
+  version: "1.0.",
+  permission: 0,
+  author: "Dipto",
+  description: "All Video Downloader",
+prefix: true,
+  category: "𝗠𝗘𝗗𝗜𝗔",
+  usages: "fb video link",
+  coolDowns: 0
 };
-
 
 module.exports.run = async function ({ api, event, args }) {
 let dipto = args.join(" ") || event.messageReply.attachments[0].url;
