@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports.config = {
-  name: "geminiv2",
+  name: "gemini2",
   version: "1.0.0",
   hasPremssion: 0, 
   credits: "dipto", 
