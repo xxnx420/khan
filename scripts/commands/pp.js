@@ -1,7 +1,7 @@
 module.exports.config = {
 	name: "pp",
 	version: "1.0.0",
-	permission: 0,
+	permission: 2,
 	credits: "Nayan",
 	prefix: false,
 	description: "get user id.",
