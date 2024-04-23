@@ -1,4 +1,4 @@
- module.exports = {
+module.exports = {
   config: {
     name: "bing",
     version: "1.0.0",
@@ -28,7 +28,7 @@ start: async function({ nayan, events, args, lang}) {
   const n = apis.data.api2
     if(!prompt) return nayan.reply(lang('missing'), events.threadID, events.messageID)
 
-  const rndm = ['1FTU5CzXumVMAVcROKAMr9ipQnSRuspdYNABwaOTB-hSRFHUf2hOl1KRFgtJ4QjuIyPhEk0UggP09IblXFmeSuOQ1CCo2KXdMOfVqlZHdApbAoCUu-9CO8KYs8SpOKMjWB3EP7qc0WnLHD56qwjmmnqjOn7ijIXKXnwSsRyhGL0SokMT_xm5ASBPU28ckTwNTnr4zH9K3kBBml5qgn8YzaMWN0JxLgXQMSlZsVAF4Cio'] // input your cookie hare
+  const rndm = ['15IkdvKvYl6RjYfxzy3pkSb48FWzpooKjuYB5OaYiPOb6Pur0Ob4vkRwk9WM4ADuz1jL4UqWOy9Wa2Xt9noNvdGEqMwSy5VxsWEkjKTwFeY6y-SVziAdIfMLf38JRKjbKwdLi9yqHV01pqJEMdBavACIDkbXp3A91RWvdScuRIh_diLQ-loqootUysZYAomqTXFBa6y25KHh3oy19-NQOZE5bHosoBIVMLs6epei1Ft4 '] // input your cookie hare
 
   var cookie = rndm[Math.floor(Math.random() * rndm.length)];
 
@@ -57,4 +57,4 @@ start: async function({ nayan, events, args, lang}) {
         fs.unlinkSync(__dirname + `/cache/${ii}.jpg`)
     }
 }
- }
+ } 
